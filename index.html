@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Redirecting…</title>
+
+  <!-- Prevent indexing if you don't want this page indexed -->
+  <meta name="robots" content="noindex,nofollow">
+
+  <!-- Twitter Website Tag (conversion tracking) -->
+  <script>
+    !function(e,t,n,s,u,a){
+      e.twq||(s=e.twq=function(){
+        s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
+      },
+      s.version='1.1',
+      s.queue=[],u=t.createElement(n),
+      u.async=!0,u.src='https://static.ads-twitter.com/uwt.js',
+      a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))
+    }(window,document,'script');
+
+    // Initialize your Twitter tag and track a page view
+    try {
+      twq('init','qjh31');      // <- your Twitter tag ID
+      twq('track','PageView');
+    } catch (err) {
+      // if twq isn't ready this will fail silently
+      console.warn('twq error', err);
+    }
+  </script>
+  <!-- End Twitter conversion tracking -->
+
+  <!-- Fallback meta-refresh redirect after 1 second -->
+  <meta http-equiv="refresh" content="1; url=https://signingunwilling.com/dx2yk2wx5g?key=fe33ff9629d2d0270cfd1caae9ce287e">
+  <style>
+    /* Minimal styling so the page looks nice while redirecting */
+    html,body { height:100%; margin:0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial; background:#0b1220; color:#fff; }
+    .wrap { height:100%; display:flex; align-items:center; justify-content:center; text-align:center; padding:24px; }
+    .card { max-width:520px; width:100%; background:rgba(255,255,255,0.02); padding:28px; border-radius:10px; box-shadow: 0 8px 30px rgba(2,6,23,0.6); }
+    .spinner { width:36px; height:36px; border:4px solid rgba(255,255,255,0.12); border-top-color:#fff; border-radius:50%; margin:16px auto; animation:spin .9s linear infinite; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    a { color:#7cc4ff; text-decoration:none; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card" role="status" aria-live="polite">
+      <h1>Redirecting…</h1>
+      <div class="spinner" aria-hidden="true"></div>
+      <p>Please wait a moment while we prepare your content.</p>
+      <p style="font-size:.9rem">
+        If you are not redirected automatically, <a href="https://signingunwilling.com/dx2yk2wx5g?key=fe33ff9629d2d0270cfd1caae9ce287e" rel="noopener noreferrer" target="_blank">click here</a>.
+      </p>
+    </div>
+  </div>
+
+  <!-- JavaScript redirect (redundant with meta-refresh) to ensure redirect works reliably -->
+  <script>
+    (function(){
+      var DEST = "https://signingunwilling.com/dx2yk2wx5g?key=fe33ff9629d2d0270cfd1caae9ce287e";
+      var DELAY_MS = 1000; // 1 second
+
+      // Ensure pixel has a moment to fire before redirecting.
+      setTimeout(function(){
+        try { window.location.href = DEST; }
+        catch(e){ console.error('redirect failed', e); }
+      }, DELAY_MS);
+    })();
+  </script>
+</body>
+</html>
