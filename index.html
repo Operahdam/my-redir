@@ -9,26 +9,14 @@
   <meta name="robots" content="noindex,nofollow">
 
   <!-- Twitter Website Tag (conversion tracking) -->
-  <script>
-    !function(e,t,n,s,u,a){
-      e.twq||(s=e.twq=function(){
-        s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
-      },
-      s.version='1.1',
-      s.queue=[],u=t.createElement(n),
-      u.async=!0,u.src='https://static.ads-twitter.com/uwt.js',
-      a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))
-    }(window,document,'script');
-
-    // Initialize your Twitter tag and track a page view
-    try {
-      twq('init','qjh31');      // <- your Twitter tag ID
-      twq('track','PageView');
-    } catch (err) {
-      // if twq isn't ready this will fail silently
-      console.warn('twq error', err);
-    }
-  </script>
+  <!-- Twitter conversion tracking base code -->
+<script>
+!function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
+},s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='https://static.ads-twitter.com/uwt.js',
+a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+twq('config','qb3d6');
+</script>
+<!-- End Twitter conversion tracking base code -->
   <!-- End Twitter conversion tracking -->
 
   <!-- Fallback meta-refresh redirect after 1 second -->
@@ -70,3 +58,4 @@
   </script>
 </body>
 </html>
+
